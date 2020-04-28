@@ -1,6 +1,6 @@
 ###### Flaviano Vilhena - flavianovilhena@gmail.com
 
-# CRUD CREATHUS AGENDA - API REST JAVA </br> (SpringBoot / Swagger) E FRONTEND (React, JavaScript, Html e CSS)
+# CRUD CREATHUS AGENDA - API REST JAVA </br> (SpringBoot / Swagger) E FRONTEND (React, VueJs, JavaScript, Html e CSS)
 
 ## ETAPAS DO DESENVOLVIMENTO
 
