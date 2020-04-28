@@ -1,0 +1,12 @@
+## CONFIGURACOES DA CONEXAO COM O BANCO DE DADOS ##
+
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation = true
+
+#HOST, USUARIO E SENHA DO BANCO DE DADOS
+spring.datasource.url = jdbc:postgresql://localhost:5432/creathus_agenda
+spring.datasource.username = postgres
+spring.datasource.password = root
+
+#HIBERNATE CRIA OU ATUALIZA AUTOMATICAMENTE AS TABELAS DO BANCO DE DADOS
+spring.jpa.hibernate.ddl-auto = update
+

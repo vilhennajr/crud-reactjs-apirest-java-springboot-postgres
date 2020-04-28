@@ -1,0 +1,8 @@
+package com.creathus.crup.api.rest.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class SwaggerConfig {
+
+}

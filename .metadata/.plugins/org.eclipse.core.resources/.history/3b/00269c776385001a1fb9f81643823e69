@@ -1,0 +1,14 @@
+package com.creathus.crup.api.rest.models;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+//DEFININDO A ENTIDADE CONTATOS
+@Entity
+
+//NOME DA TABELA QUE SERA CRIADA NO BANCO DE DADOS
+@Table(name = "contatos")
+
+public class Contatos {
+
+}

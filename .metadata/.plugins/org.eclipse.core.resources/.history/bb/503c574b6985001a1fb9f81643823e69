@@ -1,0 +1,5 @@
+package com.creathus.crup.api.rest.controllers;
+
+public class ContactsController {
+
+}

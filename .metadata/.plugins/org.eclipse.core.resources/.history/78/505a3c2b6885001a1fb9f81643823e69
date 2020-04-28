@@ -1,0 +1,5 @@
+package com.creathus.crup.api.rest.repository;
+
+public interface ContactsRepository {
+
+}

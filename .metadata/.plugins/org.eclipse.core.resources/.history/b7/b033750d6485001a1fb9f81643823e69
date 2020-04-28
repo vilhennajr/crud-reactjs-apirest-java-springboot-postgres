@@ -1,0 +1,39 @@
+package com.creathus.crup.api.rest.models;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+//DEFININDO A ENTIDADE CONTATOS
+@Entity
+
+//NOME DA TABELA QUE SERA CRIADA NO BANCO DE DADOS
+@Table(name = "contatos")
+
+//IMPLEMENTANDO A SERIALIZACAO
+public class Contatos implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
+	/*/DEFININDO OS ATRIBUTOS DA TABELA CONTATOS/*/
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
+	
+	//NOME
+	private String nome;
+	
+	//SEXO
+	private String sexo;
+	
+	//TELEFONE
+	private String telefone;
+	
+	//EMAIL
+	private String email;
+	
+}

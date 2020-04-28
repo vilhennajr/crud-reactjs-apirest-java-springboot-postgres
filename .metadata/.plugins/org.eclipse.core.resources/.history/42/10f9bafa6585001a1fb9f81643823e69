@@ -1,0 +1,15 @@
+#DEFININDO OS ATRIBUTOS DA TABELA CONTATOS
+
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+
+spring.jpa.hibernate.ddl-auto=create
+
+spring.datasource.url = jdbc:postgresql://localhost:5432/creatus_agenda
+
+spring.datasource.username=postgres
+spring.datasource.password=root
+
+#HIBERNATE CRIA OU ATUALIZA AUTOMATICAMENTE AS TABELAS
+
+spring.jpa.hibernate.ddl-auto = update
+

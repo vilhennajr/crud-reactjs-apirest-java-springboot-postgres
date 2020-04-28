@@ -1,0 +1,27 @@
+package com.creathus.crup.api.rest.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.creathus.crup.api.rest.models.Contacts;
+import com.creathus.crup.api.rest.repository.ContactsRepository;
+
+@RestController
+@RequestMapping(value = "/api-rest")
+public class ContactsController {
+	@Autowired
+	ContactsRepository contactsRepository;
+	
+	/*/DEFININDO AS RODAS DOS METODOS HTTP/*/
+	
+	//ROTA PARA LISTAR TODOS OS CONTATOS DA AGENDA
+	@GetMapping("/contacs")
+	public List<Contacts> index(){
+		return contactsRepository.findAll();
+	}
+	
+}

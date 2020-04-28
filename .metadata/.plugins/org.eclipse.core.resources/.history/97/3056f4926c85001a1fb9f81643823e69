@@ -1,0 +1,11 @@
+package com.creathus.crup.api.rest.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.creathus.crup.api.rest.models.Contacts;
+
+//PERSITENCIA DE DADOS
+
+public interface ContactsRepository extends JpaRepository<Contacts, Long> {
+
+}

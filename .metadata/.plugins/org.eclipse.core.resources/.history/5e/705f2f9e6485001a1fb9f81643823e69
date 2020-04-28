@@ -1,0 +1,83 @@
+package com.creathus.crup.api.rest.models;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+//DEFININDO A ENTIDADE CONTATOS
+@Entity
+
+//NOME DA TABELA QUE SERA CRIADA NO BANCO DE DADOS
+@Table(name = "contatos")
+
+//IMPLEMENTANDO A SERIALIZACAO
+public class Contatos implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
+	/*/DEFININDO OS ATRIBUTOS DA TABELA CONTATOS/*/
+	
+	//ID
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO) //CRIA AUTOMATICAMENTE OS ID's
+	private long id;
+	
+	//NOME
+	private String nome;
+	
+	//SEXO
+	private String sexo;
+	
+	//TELEFONE
+	private String telefone;
+	
+	//EMAIL
+	private String email;
+	
+	/*/CONTROLADORES DAS ALTERACOES NAS VARIAVEIS (Getters and Setters) /*/
+	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	
+}
